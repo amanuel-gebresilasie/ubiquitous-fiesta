@@ -31,11 +31,11 @@ function loadHome(alreadyBooted=false){
             cycles--;
         }
 
-  async function typeEffect(text, element, speed = 100) {
+  async function typeEffect(text, element, dur = 100) {
     element.innerHTML = ""; // Clear any existing content
     for (let char of text) {
       element.innerHTML += char;
-      await sleep(speed); // Wait between characters
+      await sleep(dur); // Wait between characters
     }
   }
 
